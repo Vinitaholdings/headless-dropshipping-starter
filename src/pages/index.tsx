@@ -1,5 +1,5 @@
 import React from 'react';
-import Promo from '/src/components/Promo.tsx';
+import Promo from '../components/Promo';
 
 export default function App() {
   return (
