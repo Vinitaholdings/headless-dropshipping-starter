@@ -6,15 +6,17 @@ import "../styles/app.css";
 
 import { defaultSEO } from "../../next-seo.config";
 import { WishlistProvider } from "../context/wishlist";
-import Layout from "../components/Layout";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WishlistProvider>
-      <Layout>
-        <DefaultSeo {...defaultSEO} />
+      <Header>
+      <DefaultSeo {...defaultSEO} />
+      </Header>
         <Component {...pageProps} />
-      </Layout>
+      <Footer />
     </WishlistProvider>
   );
 }
