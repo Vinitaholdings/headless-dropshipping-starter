@@ -1,18 +1,24 @@
 import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (
-    <div className="max-w-full mx-auto ">
+    <div className="max-w-full mx-auto">
       <div className="py-6 px-6 border-t bg-black border-gray-100 text-center flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center">
-          <img
+          {/* Replace <img> with Next.js Image component */}
+          <Image
             src="/goods.png" // Assuming your logo is in the public directory
             alt="Logo"
-            className="w-100 h-12 mr-2"
+            width={100}
+            height={50}
+            className="mr-2"
           />
-          <p className="text-white text-sm px-50">
+          <p className="text-white text-sm px-4">
             Powered by{' '}
-            <a
+            {/* Replace <a> tag with Next.js Link component */}
+            <Link
               href="https://slidehousemp.com"
               title="Slide House Records"
               target="_blank"
@@ -20,22 +26,21 @@ const Footer: React.FC = () => {
               className="ml-0.5 text-white hover:text-blue-600"
             >
               Slide House Records
-            </a>
+            </Link>
           </p>
         </div>
         <nav className="flex items-center justify-end space-x-3 md:space-x-6">
-          <a
-            href="/about"
-            className="text-white hover:text-blue-600 p-1 transition text-sm"
-          >
-            FAQS
-          </a>
-          <a
-            href="/terms-of-sale"
-            className="text-white hover:text-blue-600 p-1 transition text-sm"
-          >
-            Terms of Sale
-          </a>
+          {/* Replace <a> tags with Next.js Link components */}
+          <Link href="/about">
+            <a className="text-white hover:text-blue-600 p-1 transition text-sm">
+              FAQS
+            </a>
+          </Link>
+          <Link href="/terms-of-sale">
+            <a className="text-white hover:text-blue-600 p-1 transition text-sm">
+              Terms of Sale
+            </a>
+          </Link>
         </nav>
       </div>
     </div>
