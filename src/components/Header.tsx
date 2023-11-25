@@ -21,14 +21,14 @@ const Header = ({ children }) => {
                   </a>
                 </Link>
                 <Link href="/products">
-                  <a className="text-black hover:text-blue-600 p-1 transition">
+                  <span className="text-black hover:text-blue-600 p-1 transition">
                     Shop
-                  </a>
+                  </span>
                 </Link>
                 <Link href="/about">
-                  <a className="text-black hover:text-blue-600 p-1 transition">
+                  <span className="text-black hover:text-blue-600 p-1 transition">
                     About Us
-                  </a>
+                  </span>
                 </Link>
               </nav>
             </div>
