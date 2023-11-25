@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Promo = () => {
@@ -26,12 +27,12 @@ const Promo = () => {
           Immerse yourself in a world of creativity. Explore and collect exclusive
           artist merch that speaks to the soul.
         </p>
-        <a
+        <Link
           href="/products"
           className="bg-red-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300"
         >
           Shop Now
-        </a>
+        </Link>
       </div>
     </div>
   );
