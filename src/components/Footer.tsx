@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
           <img
             src="/goods.png" // Assuming your logo is in the public directory
             alt="Logo"
-            className="w-12 h-12 mr-2"
+            className="w-100 h-12 mr-2"
           />
           <p className="text-white text-sm px-50">
             Powered by{' '}
