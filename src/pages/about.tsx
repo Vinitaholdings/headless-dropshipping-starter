@@ -24,7 +24,7 @@ const AboutUs: React.FC = () => {
 
       <section>
         <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-        <p>Have questions or suggestions? We'd love to hear from you! Contact our support team at support@merchbygoods.com </p>
+        <p>Have questions or suggestions? We'd love to hear from you! Contact our support team at support@merchbygoods.com.</p>
       </section>
     </div>
   );
