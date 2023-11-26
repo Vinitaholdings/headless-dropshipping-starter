@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
             {/* Replace <a> tag with Next.js Link component */}
             <Link
               href="https://slidehousemp.com"
-              title="Slide House Records"
+              // Remove title, as it's not a valid prop for Link
               target="_blank"
               rel="noopener noreferrer"
               className="ml-0.5 text-white hover:text-blue-600"
