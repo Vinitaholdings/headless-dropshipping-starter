@@ -15,17 +15,17 @@ const Header = ({ children }) => {
           <div className="flex items-center justify-between">
             <div className="md:w-1/3">
               <nav className="flex items-center justify-start space-x-3 md:space-x-6">
-                <Link href="/">
+                <Link href="/" passHref>
                   <a className="text-black hover:text-blue-600 p-1 transition">
                     Home
                   </a>
                 </Link>
-                <Link href="/products">
+                <Link href="/products" passHref>
                   <span className="text-black hover:text-blue-600 p-1 transition">
                     Shop
                   </span>
                 </Link>
-                <Link href="/about">
+                <Link href="/about" passHref>
                   <span className="text-black hover:text-blue-600 p-1 transition">
                     About Us
                   </span>
@@ -33,7 +33,7 @@ const Header = ({ children }) => {
               </nav>
             </div>
             <div className="flex-1 flex items-center justify-center">
-              <Link href="/">
+              <Link href="/" passHref>
                 <a className="flex items-center text-black">
                   <Image
                     src="/goods.png"
@@ -55,10 +55,10 @@ const Header = ({ children }) => {
                   className="w-6 h-6 fill-current text-black"
                 >
                   <path fill="none" d="M0 0h24v24H0z" />
-                  <path d="M4 22a8 8 0 1 1 16 0h-2a6 6 0 1 0-12 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z" />
+                  <path d="M4 16V4H2V2h3a1 1 0 0 1 1 1v12h12.438l2-8H8V5h13.72a1 1 0 0 1 .97 1.243l-2.5 10a1 1 0 0 1-.97.757H5a1 1 0 0 1-1-1zm2 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
                 </svg>
               </button>
-              <Link href="/wishlist">
+              <Link href="/wishlist" passHref>
                 <a
                   className="px-2 text-black hover:text-blue-600 rounded-md cursor-pointer focus:outline-none focus:text-blue-600 relative transition"
                   aria-label="Wishlist"
