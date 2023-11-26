@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image'; // Import Image component
 
 const Footer: React.FC = () => {
   return (
-    <div className="max-w-full mx-auto ">
+    <div className="max-w-full mx-auto">
       <div className="py-6 px-6 border-t bg-black border-gray-100 text-center flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center">
           <Link href="https://slidehousemp.com"> {/* Use Link component for external links */}
@@ -11,7 +12,9 @@ const Footer: React.FC = () => {
               <Image
                 src="/goods.png" // Assuming your logo is in the public directory
                 alt="Logo"
-                className="w-100 h-12 mr-2"
+                width={100} // Set the width and height attributes
+                height={40}
+                className="mr-2"
               />
               <p className="text-white text-sm">
                 Powered by Slide House Records
