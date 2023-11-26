@@ -1,5 +1,3 @@
-// Create a file named AboutUs.tsx
-
 import React from 'react';
 
 const AboutUs: React.FC = () => {
@@ -13,7 +11,7 @@ const AboutUs: React.FC = () => {
 
       <section className="mb-8">
         <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-        <p className="mb-4">Our mission at MerchbyGoods is to empower artists by providing them with a platform to showcase and sell their merchandise directly to fans. We aim to create a thriving community where artists and fans can connect, fostering a sense of appreciation for creativity and artistic expression.</p>
+        <p className="mb-4">Our mission at MerchbyGoods is to empower artists by providing them with a platform to showcase and sell their merchandise. We aim to create a thriving community where artists and fans can connect, fostering a sense of appreciation for creativity and artistic expression.</p>
       </section>
 
       <section className="mb-8">
